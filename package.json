@@ -1,0 +1,23 @@
+{
+  "name": "brickhaus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alykief/brickhaus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alykief/brickhaus/issues"
+  },
+  "homepage": "https://github.com/alykief/brickhaus#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  }
+}

@@ -1,60 +1,46 @@
-const app = angular.module('MyApp', [])
+const app = angular.module('MyApp', []);
 
-app.controller('MainController', ['$http', function($http){
+app.controller('MyController', ['$http', function($http){
 
-  this.createItem = function(){
-  $http({
-    method:'POST',
-    url:'/items',
-    data: {
-      name: this.name,
-      calories: this.calories,
-      protein: this.protein,
-      carbs: this.carbs,
-      fats: this.fats,
-      sugar: this.sugar,
-      fiber: this.fiber
-    }
-  }).then(function(response){
-    controller.getItems();
-    })
-  }
+  this.name = "";
+  this.serving = "";
+  this.calories = "";
+  this.protein = "";
+  this.carbohydrates = "";
+  this.fat = "";
+  this.sugar = "";
+  this.fiber = "";
+
+  const controller = this;
 
   this.getItems = function(){
     $http({
-      method:'GET',
-      url:'/items'
+      method: 'GET',
+      url: '/items'
     }).then(function(response){
       controller.items = response.data;
     })
   }
 
-  this.deleteItem = function(item){
+  this.createItem = function(){
     $http({
-      method:'DELETE',
-      url:'/items/' + items._id
-    }).then(function(response){
-      controller.getItems();
-    })
-  }
-
-  this.editItem = function(item){
-    $http({
-      method:'PUT',
-      url:'/items/' + items._id,
+      method: 'POST',
+      url: '/items',
       data: {
-        name: this.updatedName,
-        calories: this.updatedCalories,
-        protein: this.updatedProtein,
-        carbs: this.updatedCarbs,
-        fats: this.updatedFats,
-        sugar: this.updatedSugar,
-        fiber: this.updatedFiber
+        name: this.name,
+        serving: this.serving,
+        calories: this.calories,
+        protein: this.protein,
+        carbohydrates: this.carbohydrates,
+        fat: this.fat,
+        sugar: this.sugar,
+        fiber: this.fiber
       }
     }).then(function(response){
-      controller.getItems();
+      console.log(response);
     })
   }
+
   this.getItems();
 
-}])
+}]);
