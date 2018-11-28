@@ -5,37 +5,41 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
   <body ng-controller="MyController as ctrl">
 
-    <h1>Database</h1>
-      <ul>
-        <li ng-repeat="item in ctrl.items">
-            {{ item.name }}
-            {{ item.serving }}
-        </li>
-      </ul>
+    <img src="/css/Header.jpg">
+      <div class="section1">
+        <h1>Database</h1>
+          <ul>
+            <li ng-repeat="item in ctrl.items">
+                {{ item }}
+            </li>
+          </ul>
+      </div>
 
-    {{ ctrl.name }}
-    <form ng-submit="ctrl.createItem()">
-      Food Name: <input type="text" ng-model="ctrl.name" placeholder="Food Name" />
-      <br>
-      Serving: <input type="text" ng-model="ctrl.serving"  placeholder="Serving" />
-      <br>
-      Calories: <input type="text" ng-model="ctrl.calories"  placeholder="Calories" />
-      <br>
-      Protein: <input type="text" ng-model="ctrl.protein"  placeholder="Protein" />
-      <br>
-      Carbohydrates: <input type="text" ng-model="ctrl.carbohydrates"  placeholder="Carbohydrates" />
-      <br>
-      Fat: <input type="text" ng-model="ctrl.fat"  placeholder="Fat" />
-      <br>
-      Sugar: <input type="text" ng-model="ctrl.sugar"  placeholder="Sugar" />
-      <br>
-      Fiber: <input type="text" ng-model="ctrl.fiber"  placeholder="Fiber" />
-      <br>
-      <input type="submit" value="Create New Food Item" />
-    </form>
+    <div class="section2">
+      <form ng-submit="ctrl.createItem()">
+        Food Name: <input type="text" ng-model="ctrl.name" placeholder="Food Name" />
+        <br>
+        Serving: <input type="text" ng-model="ctrl.serving"  placeholder="Serving" />
+        <br>
+        Calories: <input type="text" ng-model="ctrl.calories"  placeholder="Calories" />
+        <br>
+        Protein: <input type="text" ng-model="ctrl.protein"  placeholder="Protein" />
+        <br>
+        Carbohydrates: <input type="text" ng-model="ctrl.carbohydrates"  placeholder="Carbohydrates" />
+        <br>
+        Fat: <input type="text" ng-model="ctrl.fat"  placeholder="Fat" />
+        <br>
+        Sugar: <input type="text" ng-model="ctrl.sugar"  placeholder="Sugar" />
+        <br>
+        Fiber: <input type="text" ng-model="ctrl.fiber"  placeholder="Fiber" />
+        <br>
+        <input type="submit" value="Create New Food Item" class="submit"/>
+      </form>
+    </div>
 
   </body>
 </html>
