@@ -14,15 +14,31 @@
         <h1>Database</h1>
           <ul>
             <li ng-repeat="item in ctrl.items">
-                <h2>{{ item.name }}<h2>
-                {{ item.serving }}
-                {{ item.calories }}
-                {{ item.protein }}
-                {{ item.carbohydrates }}
-                {{ item.fat }}
-                {{ item.sugar }}
-                {{ item.fiber }}
+                <h2 class="title">{{ item.name }}<h2>
+                </br>
+                <h2>Serving:</h2> <h3>{{ item.serving }}</h3>
+                <h2>Calories:</h2> <h3>{{ item.calories }}</h3>
+                <br>
+                <h2>Protein:</h2> <h3>{{ item.protein }}</h3>
+                <h2>Carbohydrates:</h2> <h3>{{ item.carbohydrates }}</h3>
+                <h2>Fat:</h2> <h3>{{ item.fat }}</h3>
+                <br>
+                <h2>Sugar:</h2> <h3>{{ item.sugar }}</h3>
+                <h2>Fiber:</h2> <h3>{{ item.fiber }}</h3>
+                <br>
                 <button ng-click="ctrl.deleteItem(item)">Delete</button>
+                <br>
+                <button ng-click="ctrl.indexOfEditFormToShow = $index">Edit This Entry</button>
+                <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editItem(item);">
+                  <input type="text" ng-model="ctrl.updatedName"  placeholder="Update Name">
+                  <input type="text" ng-model="ctrl.updatedServing"  placeholder="Update Serving">
+                  <input type="text" ng-model="ctrl.updatedCalories"  placeholder="Update Calories">
+                  <input type="text" ng-model="ctrl.updatedProtein"  placeholder="Update Protein">
+                  <input type="text" ng-model="ctrl.updatedCarbohydrates"  placeholder="Update Carbohydrates">
+                  <input type="text" ng-model="ctrl.updatedFat"  placeholder="Update Fat">
+                  <input type="text" ng-model="ctrl.updatedSugar"  placeholder="Update Sugar">
+                  <input type="text" ng-model="ctrl.updatedFiber"  placeholder="Update Fiber">
+                </form>
             </li>
           </ul>
       </div>
@@ -49,5 +65,8 @@
       </form>
     </div>
 
+    <div class="section3">
+      <h1>Daily Log</h1>
+    </div>
   </body>
 </html>

@@ -2,15 +2,6 @@ const app = angular.module('MyApp', []);
 
 app.controller('MyController', ['$http', function($http){
 
-  this.name = "";
-  this.serving = "";
-  this.calories = "";
-  this.protein = "";
-  this.carbohydrates = "";
-  this.fat = "";
-  this.sugar = "";
-  this.fiber = "";
-
   const controller = this;
 
   this.getItems = function(){
