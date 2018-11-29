@@ -8,7 +8,7 @@
 ## Methods
 #### I began my project by achieving full MEAN CRUD in the most basic way possible. I set up a Controller for the Item (i.e. the food) and went from there. Once this was achieved, I worked on basic styling. I opted for a color palette and header and my inspiration, and kept a sleekly designed wire frame to follow.
 
-[Color Palette](file:///Users/alyssackieffer/Desktop/WDIR-Speculoos/final_project/brickhaus/palette.pdf)
+[Color Palette](https://github.com/alykief/brickhaus/issues/1)
 
 [Header](file:///Users/alyssackieffer/Desktop/WDIR-Speculoos/final_project/brickhaus/public/css/Header.jpg)
 
