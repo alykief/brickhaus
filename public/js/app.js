@@ -37,7 +37,35 @@ app.controller('MyController', ['$http', function($http){
         fiber: this.fiber
       }
     }).then(function(response){
-      console.log(response);
+      controller.getItems();
+    })
+  }
+
+  this.deleteItem = function(item){
+    $http({
+      method: 'DELETE',
+      url: '/items/' + item._id
+    }).then(function(response){
+      controller.getItems();
+    })
+  }
+
+  this.editItem = function(item){
+    $http({
+      method: 'PUT',
+      url: '/items/' + item._id,
+      data: {
+        name: this.updatedName,
+        serving: this.updatedServing,
+        calories: this.updatedCalories,
+        protein: this.updatedProtein,
+        carbohydrates: this.updatedCarbohydrates,
+        fat: this.updatedFat,
+        sugar: this.updatedSugar,
+        fiber: this.updatedFiber
+      }
+    }).then(function(response){
+      controller.getItems();
     })
   }
 
