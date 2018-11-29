@@ -3,12 +3,12 @@
 ## WDIR Final Project by Alyssa Kieffer
 
 ## Technology
-#### For this project, I utilized the MEAN stack - Mongo, Express, AngularJS and Node.
+For this project, I utilized the MEAN stack - Mongo, Express, AngularJS and Node.
 
 ## Methods
-#### I began my project by achieving full MEAN CRUD in the most basic way possible. I set up a Controller for the Item (i.e. the food) and went from there. Once this was achieved, I worked on basic styling. I opted for a color palette and header and my inspiration, and kept a sleekly designed wire frame to follow.
+I began my project by achieving full MEAN CRUD in the most basic way possible. I set up a Controller for the Item (i.e. the food) and went from there. Once this was achieved, I worked on basic styling. I opted for a color palette and header and my inspiration, and kept a sleekly designed wire frame to follow.
 
-[Color Palette](https://github.com/alykief/brickhaus/issues/1)
+![Color Palette](https://github.com/alykief/brickhaus/blob/master/palette.pdf)
 
 ![Header](https://github.com/alykief/brickhaus/blob/master/public/css/Header.jpg)
 
