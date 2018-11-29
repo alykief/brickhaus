@@ -14,7 +14,13 @@ I began my project by achieving full MEAN CRUD in the most basic way possible. I
 
 ## Issues
 
+At first, I was having connectivity issues with my Mongo Database and my project itself. Instead of pushing all of the new food nutrient information, it was only generating an ID. I realized that I was connected to the wrong DB within my Mongo tab and was able to resolve the issue with no harm to my code.
+
+Additionally, I really struggled launching to Heroku up until the final night. I was unable to do it on my own, although Terminal showed success with pushing to origin Heroku. Dan was able to resolve the issue with me though. 
+
 ## New Material
+
+Since I am very fond of CSS and am keen to finding new ways to utilize it, I opted to learn CSS Grid. It's an alternative way to get div's to line up properly without using flex or float. I got the hang of it quite quickly and am actually planning on integrating this new method into my portfolio as well.
 
 ## Link
 [Brickhaus Lifestyle](https://brickhaus.herokuapp.com/)

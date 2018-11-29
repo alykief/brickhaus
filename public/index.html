@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
   <body ng-controller="MyController as ctrl">
-
-    <img src="/css/Header.jpg">
+      <img src="/css/Header.jpg">
       <div class="section1">
         <h1>Daily Log</h1>
           <ul>
@@ -43,7 +42,8 @@
           </ul>
       </div>
 
-    <div class="section2">
+    <div class="grid-container">
+      <div class="grid-item1">
       <form ng-submit="ctrl.createItem()">
         Food Name: <input type="text" ng-model="ctrl.name" placeholder="Food Name" />
         <br>
@@ -63,12 +63,12 @@
         <br>
         <input type="submit" value="Add to Daily Log" class="submit"/>
       </form>
-    </div>
+      </div>
 
-    <div class="section3">
+    <div class="grid-item2">
       <h1>Total Macro Intake</h1>
       <div class="daily">
-        <h4>Calories:</h4> <h5></h5>
+        <h4>Calories:</h4> <h5>{{}}</h5>
         <h4>Protein:</h4> <h5></h5>
         <h4>Carbohydrates:</h4> <h5></h5>
         <h4>Fat:</h4> <h5></h5>
@@ -76,6 +76,7 @@
         <h4>Fiber:</h4> <h5></h5>
         <button>Log Daily Intake</button>
       </div>
+    </div>
     </div>
   </body>
 </html>
