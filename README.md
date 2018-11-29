@@ -10,9 +10,9 @@
 
 [Color Palette](https://github.com/alykief/brickhaus/issues/1)
 
-[Header](file:///Users/alyssackieffer/Desktop/WDIR-Speculoos/final_project/brickhaus/public/css/Header.jpg)
+![Header](https://github.com/alykief/brickhaus/blob/master/public/css/Header.jpg)
 
-[Wireframe](file:///Users/alyssackieffer/Desktop/WDIR-Speculoos/final_project/brickhaus/public/css/Screen%20Shot%202018-11-29%20at%203.26.21%20PM.png)
+![Wireframe](https://github.com/alykief/brickhaus/blob/master/public/css/Screen%20Shot%202018-11-29%20at%203.26.21%20PM.png)
 
 ## Issues
 
