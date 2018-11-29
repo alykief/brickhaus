@@ -172,3 +172,17 @@ h5 {
   margin-bottom: 2vw;
   text-align: center;
 }
+
+.secondarySubmit {
+  background-color: #ed6a5a;
+  color: #e6ebe0;
+  width: 10vw;
+  height: 2vw;
+  font-size: 12px;
+  margin-bottom: 1vw;
+}
+
+.secondarySubmit:hover {
+  background-color: #c9f2c7;
+  color: #5d737e;
+}

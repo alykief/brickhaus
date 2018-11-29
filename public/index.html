@@ -30,13 +30,21 @@
                 <button ng-click="ctrl.indexOfEditFormToShow = $index">Edit This Entry</button>
                 <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editItem(item);">
                   <input type="text" ng-model="ctrl.updatedName"  placeholder="Update Name">
+                    <input class="secondarySubmit" type="submit" value="Update Name"><br>
                   <input type="text" ng-model="ctrl.updatedServing"  placeholder="Update Serving">
+                    <input class="secondarySubmit" type="submit" value="Update Serving"><br>
                   <input type="text" ng-model="ctrl.updatedCalories"  placeholder="Update Calories">
+                    <input class="secondarySubmit" type="submit" value="Update Calories"><br>
                   <input type="text" ng-model="ctrl.updatedProtein"  placeholder="Update Protein">
+                    <input class="secondarySubmit" type="submit" value="Update Protein"><br>
                   <input type="text" ng-model="ctrl.updatedCarbohydrates"  placeholder="Update Carbohydrates">
+                    <input class="secondarySubmit" type="submit" value="Update Carbohydrates"><br>
                   <input type="text" ng-model="ctrl.updatedFat"  placeholder="Update Fat">
+                    <input class="secondarySubmit" type="submit" value="Update Fat"><br>
                   <input type="text" ng-model="ctrl.updatedSugar"  placeholder="Update Sugar">
+                    <input class="secondarySubmit" type="submit" value="Update Sugar"><br>
                   <input type="text" ng-model="ctrl.updatedFiber"  placeholder="Update Fiber">
+                    <input class="secondarySubmit" type="submit" value="Update Fiber"><br>
                 </form>
             </li>
           </ul>
