@@ -11,7 +11,7 @@
 
     <img src="/css/Header.jpg">
       <div class="section1">
-        <h1>Database</h1>
+        <h1>Daily Log</h1>
           <ul>
             <li ng-repeat="item in ctrl.items">
                 <h2 class="title">{{ item.name }}<h2>
@@ -61,12 +61,21 @@
         <br>
         Fiber: <input type="text" ng-model="ctrl.fiber"  placeholder="Fiber" />
         <br>
-        <input type="submit" value="Create New Food Item" class="submit"/>
+        <input type="submit" value="Add to Daily Log" class="submit"/>
       </form>
     </div>
 
     <div class="section3">
-      <h1>Daily Log</h1>
+      <h1>Total Macro Intake</h1>
+      <div class="daily">
+        <h4>Calories:</h4> <h5></h5>
+        <h4>Protein:</h4> <h5></h5>
+        <h4>Carbohydrates:</h4> <h5></h5>
+        <h4>Fat:</h4> <h5></h5>
+        <h4>Sugar:</h4> <h5></h5>
+        <h4>Fiber:</h4> <h5></h5>
+        <button>Log Daily Intake</button>
+      </div>
     </div>
   </body>
 </html>

@@ -24,7 +24,7 @@ li {
   border: 1px solid #c9f2c7;
   width: 75%;
   height: auto;
-  margin-left: 3.5vw;
+  margin-left: 8vw;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ h3 {
   background-color: #5d737e;
   border: 1vw solid #e6ebe0;
   width: 73vw;
-  height: 45vw;
+  height: 28vw;
   overflow: scroll;
   margin-left: 11vw;
   margin-top: 2vw;
@@ -73,7 +73,7 @@ h3 {
   background-color: #5d737e;
   border: 1vw solid #e6ebe0;
   width: 73vw;
-  height: 45vw;
+  height: 40vw;
   margin-left: 11vw;
   margin-top: 2vw;
   overflow: scroll;
@@ -123,4 +123,24 @@ button {
 button:hover {
   background-color: #c9f2c7;
   color: #5d737e;
+}
+
+h4 {
+  color: #ed6a5a;
+  font-size: 20px;
+  text-align: center;
+}
+
+h5 {
+  color: #c9f2c7;
+  font-size: 20px;
+  text-align: center;
+}
+
+.daily {
+  border: 1px solid #c9f2c7;
+  width: 75%;
+  height: auto;
+  margin-left: 8vw;
+  text-align: center;
 }
