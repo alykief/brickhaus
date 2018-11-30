@@ -6,15 +6,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
   </head>
   <body ng-controller="MyController as ctrl">
       <img src="/css/Header.jpg">
       <div class="section1">
-        <h1>Daily Log</h1>
+        <h1>Daily Macro Log</h1>
           <ul>
             <li ng-repeat="item in ctrl.items">
                 <h2 class="title">{{ item.name }}<h2>
-                </br>
+                <br>
                 <h2>Serving:</h2> <h3>{{ item.serving }}</h3>
                 <h2>Calories:</h2> <h3>{{ item.calories }}</h3>
                 <br>
