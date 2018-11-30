@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -13,6 +15,6 @@ mongoose.connection.once('open', ()=>{
   console.log('Connected to Mongoose');
 })
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
   console.log('Listening..');
 });
